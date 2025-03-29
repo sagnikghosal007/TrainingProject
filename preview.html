@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Model Agency</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PREMIER</div>
+        <div class="nav-container">
+            <div class="nav-item">Models</div>
+            <div class="nav-item">Women / Men</div>
+            <div class="nav-item">Agency / Blog / Information</div>
+            <h2><i class="ri-search-line" ></i></h2>
+            <button class="toggle-button" id="darkModeToggle">Dark Mode</button> 
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="Premier-Asset-main/img (1).jpg">
+        <div class="hero-text">
+            <span>Photography</span>
+            <span>and films</span>
+        </div>
+        <div class="explore-button">Explore</div>
+        <div class="slide-button">→</div>
+    </section>
+
+    <section class="model-profiles">
+        <div class="model-profile">
+            <div class="profile-image">
+                <img src="Premier-Asset-main/img (10).jpg">
+            </div>
+            <div class="model-name">Sara</div>
+        </div>
+        <div class="model-profile">
+            <div class="profile-image">
+                <img src="Premier-Asset-main/img (12).jpg">
+            </div>
+            <div class="model-name">Chen Liu</div>
+        </div>
+        <div class="model-profile">
+            <div class="profile-image">
+                <img src="Premier-Asset-main/img (13).jpg">
+            </div>
+            <div class="model-name">Elias White</div>
+        </div>
+        <div class="model-profile">
+            <div class="profile-image">
+                <img src="Premier-Asset-main/img (2).jpg">
+            </div>
+            <div class="model-name">Lol Greige</div>
+        </div>
+        <div class="model-profile">
+            <div class="profile-image">
+                <img src="Premier-Asset-main/img (8).jpg">
+            </div>
+            <div class="model-name">Anya Young</div>
+        </div>
+        
+    </section>
+
+    <section class="filter-container">
+        <div class="all-button">ALL</div>
+        <div class="alphabet-filter">
+            <span class="letter">A</span>
+            <span class="letter">B</span>
+            <span class="letter">C</span>
+            <span class="letter">D</span>
+            <span class="letter">E</span>
+            <span class="letter">F</span>
+            <span class="letter">G</span>
+            <span class="letter">H</span>
+            <span class="letter">I</span>
+            <span class="letter">J</span>
+            <span class="letter">K</span>
+            <span class="letter">L</span>
+            <span class="letter">M</span>
+            <span class="letter">N</span>
+            <span class="letter">O</span>
+            <span class="letter">P</span>
+            <span class="letter">Q</span>
+            <span class="letter">R</span>
+            <span class="letter">S</span>
+            <span class="letter">T</span>
+            <span class="letter">U</span>
+            <span class="letter">V</span>
+            <span class="letter">W</span>
+            <span class="letter">X</span>
+            <span class="letter">Y</span>
+            <span class="letter">Z</span>
+        </div>
+    </section>
+
+    <section class="featured-content">
+        <div class="featured-item">
+            <img class="featured-image" src="Premier-Asset-main/img (4).jpg" >
+            <div class="vogue-tag">
+                <span>VOGUE</span> / SHOT
+            </div>
+        </div>
+        
+        <div class="featured-item">
+            <img class="featured-image" src="Premier-Asset-main/img (5).jpg">
+            <div class="featured-text">
+                <h3>Hannah Motler features in a fashion story by the lake for Vogue new shot</h3>
+                <p>Such response to the fashion and beauty industries enabled her creativity to transition from one end of the camera to the other.</p>
+            </div>
+        </div>
+        
+        <div class="featured-item">
+            <div class="featured-text">
+                <h3>Maison ARTC: memories and culture, the base of futuristic fashion awareness. Tilla Ouihja look</h3>
+            </div>
+        </div>
+        
+        <div class="featured-item">
+            <img class="featured-image" src="Premier-Asset-main/img (6).jpg">
+        </div>
+        <div class="featured-item">
+            <img class="featured-image" src="Premier-Asset-main/img (7).jpg">
+            <div class="featured-text1">
+                <h2>MOVIE SHOTS</h2>
+                <p>ondon based model has a distinct aesthetic within his photography & moving image.</p>
+            </div>
+        </div>
+
+    </section> 
+    
+    <div class="video-container">
+        <video autoplay loop muted src="Premier-Asset-main/Video.mp4"></video>
+        <div class="text-overlay">
+          ____MARRAKECH SHOT_______________
+          <br>~Maison ARTC
+        </div>
+      </div>
+
+    <div class="footer">
+        <div class="footer-text">© Premier by Sagnik STCET 2025</div>
+        <div class="social-icons">
+            <span>🔗instagram</span>
+            <span>🔗github</span>
+            <span>🔗linkedin</span>
+        </div>
+    </div>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+</html>
